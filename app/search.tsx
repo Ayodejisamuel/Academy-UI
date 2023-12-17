@@ -6,9 +6,9 @@ import Image from "next/image";
 
 interface Course {
   id: number;
-  title: "";
-  author: "";
-  cover_image: "";
+  title: string;
+  author: string;
+  cover_image: string;
 }
 
 const Search = () => {

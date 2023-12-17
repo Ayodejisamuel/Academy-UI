@@ -14,8 +14,9 @@ const Topbar = () => {
               alt="group-logo"
               width={30}
               height={30}
-              src={"/images/Grouplogo.png"}
-            />{" "}
+              src={"/Grouplogo.png"}
+            />
+            
             <h2 className={styles.academyheader}>ACADEMY</h2>
             <div className={styles.categoriesdivv}>
               <Link href="">Categories</Link>
@@ -35,7 +36,7 @@ const Topbar = () => {
             <div className={styles.imgdiv}>
               <Image
                 className={styles.img}
-                src="/images/profile.jpg"
+                src="/profile.jpg"
                 alt="profile-img"
                 width={80}
                 height={60}

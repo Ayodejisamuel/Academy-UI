@@ -17,19 +17,21 @@ const Intro = () => {
           <div className={styles.btndiv}>
           
             <div className={styles.startbtndiv}><Button name="Start Course now" /></div>
-            <Image alt="arrow-img" width={200} height={100} src='/images/booked.jpg' />
+            <Image alt="arrow-img" width={200} height={100} src='/booked.jpg' />
           </div>
         </div>
       </div>
 
       <div className={styles.bgImage}>
+
         <Image
-          src="/images/image.jpg"
+          src="/image.jpg"
           alt="bgimage"
           className={styles.bgImagee}
           height={600}
           width={500}
         />
+        
       </div>
       
     </div>
