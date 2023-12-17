@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
+  /** @type {import('next').NextConfig} */
 
 
-module.exports = {
-  images: {
-    domains: ['fakeimg.pl'],
-  },
-}
+  module.exports = {
+    output: 'export',
+    images: {
+      domains: ['fakeimg.pl'],
+    },
+  }
