@@ -2,7 +2,7 @@
 
 
   module.exports = {
- 
+ output: 'export',
     images: {
       domains: ['fakeimg.pl'],
     },
