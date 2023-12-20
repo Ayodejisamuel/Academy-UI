@@ -1,19 +1,21 @@
 .navbar {
+
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .categoriesdivv {
+
   display: flex;
   align-items: center;
-  /* background-color: red; */
-  /* width: 100vw; */
 
 }
 
 .academy {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +23,6 @@
   align-content: center;
 
 }
-
 
 .academyheader {
   font-family: 'Roboto', sans-serif;
@@ -35,7 +36,7 @@
   justify-content: space-around;
   width: 10rem;
 
-  
+
 }
 
 .categories a {
@@ -70,13 +71,8 @@
   outline: none;
 
 }
-
-
-
 .input::placeholder {
-
   color: white;
-
 }
 
 .profile {
@@ -117,7 +113,7 @@
 .notification {
   margin-left: 1rem;
 }
- 
+
 
 
 .dropdownmenu {
@@ -205,7 +201,7 @@
   margin-left: 10px;
   display: flex;
   align-items: center;
- 
+
 
 
 }
@@ -411,7 +407,8 @@
 }
 
 
-.title, .author {
+.title,
+.author {
   text-align: center;
   font-size: .8rem;
 }
@@ -439,7 +436,7 @@
     display: none;
   }
 
-  
+
 
   .hellodiv {
     font-size: 1rem;
@@ -531,12 +528,13 @@
   }
 
   .academyheader {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 
   .bgImage {
     right: 2rem;
   }
+
   .inputprofilediv {
     padding-right: 2rem;
   }
@@ -558,6 +556,7 @@
     width: 60%;
     margin-top: 2rem;
   }
+
   .profile {
     display: flex;
   }
@@ -577,14 +576,17 @@
   .bgImage {
     right: 2rem;
   }
+
   .inputprofilediv {
     /* background-color: red; */
     padding-right: 10rem;
     height: 4rem;
   }
-.searchContent {
-  margin-top: .5rem;
-}
+
+  .searchContent {
+    margin-top: .5rem;
+  }
+
   .categories a {
     font-size: 1rem;
   }
@@ -592,7 +594,7 @@
 }
 
 
-@media screen  and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
 
   .academyheader {
     font-size: 2.5rem;
@@ -604,9 +606,9 @@
   }
 
   .startbtn {
-    margin-right:3rem;
+    margin-right: 3rem;
   }
 
 
-  
+
 }

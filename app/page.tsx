@@ -1,11 +1,13 @@
 // import React, {useRef} from "react";
-
-import styles from "./page.module.css";
+'use client'
+import { Provider } from "react-redux";
 import Intro from "./intro";
 import Link from "./link";
 import Topbar from './navbar'
 import Search from "./search";
 import Footer from "./component/footer";
+ import store from './redux/store'
+ 
  
 
 
@@ -16,11 +18,17 @@ export default function Navbar() {
 
   return (
     <div>
+
       <Topbar />
       <Link />
       <Intro />
+      <Provider store ={store}>
       <Search />
+
+      
+      </Provider>
       <Footer />
+
     </div>
   );
 }

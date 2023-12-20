@@ -1,19 +1,27 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
+import { Provider } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import store from "./redux/store";
+import { setCourses } from "./redux/features/courseSlice";
 import styles from "./page.module.css";
 import Button from "./button";
 import Image from "next/image";
 
 interface Course {
+
   id: number;
   title: string;
   author: string;
   cover_image: string;
+
 }
 
 const Search = () => {
-  
-  const [courses, setCourses] = useState<Course[]>([]);
+
+  const dispatch = useDispatch()
+
+  const courses = useSelector((state: any) => state.course.courses)
 
   
   useEffect(() => {
@@ -32,17 +40,17 @@ const Search = () => {
   
         console.log("Response from API:", result);
   
-        setCourses(result);
+        dispatch(setCourses(result));
       } catch (error: any) {
         console.error("Error fetching data:", error.message);
       }
     };
   
     fetchData();
-  }, [ ]);
+  }, [ dispatch]);
 
   return (
-
+<Provider store={store}>
     <div className={styles.searchContainer}>
       <div className={styles.searchContent}>
         <h2 className={styles.searchheader}>
@@ -77,7 +85,7 @@ const Search = () => {
       </div>
 
       <div className={styles.bookSection} >
-        {courses.map((course, index) => (
+        {courses.map((course: Course, index: number) => (
           <div className={styles.bookdiv} key={index}>
             <div className={styles.bookContainer}>
               <Image
@@ -94,7 +102,9 @@ const Search = () => {
         ))}
       </div>
     </div>
+    </Provider>
   );
 };
+
 
 export default Search;
