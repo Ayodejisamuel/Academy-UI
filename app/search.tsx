@@ -94,7 +94,9 @@ const Search = () => {
                 src={course.cover_image}
                 width={300}
                 height={300}
-                alt={`Cover of ${course.title}`}
+                alt={course.cover_image}
+                loading="lazy"
+                // layout='fill'
               />
 
               <h5 className={styles.title}>title : {course.title}</h5>

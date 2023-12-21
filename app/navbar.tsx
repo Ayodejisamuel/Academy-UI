@@ -10,7 +10,7 @@ const Topbar = () => {
       <div className={styles.navbar}>
         <div className={styles.academy}>
           <div className={styles.categories}>
-            <Image
+            <img
               alt="group-logo"
               width={30}
               height={30}
@@ -34,12 +34,13 @@ const Topbar = () => {
 
           <div className={styles.profile}>
             <div className={styles.imgdiv}>
-              <Image
+              <img
                 className={styles.img}
                 src="/profile.jpg"
-                alt="profile-img"
+                alt="/profile.jpg"
                 width={80}
                 height={60}
+                
               />
               <div className={styles.imgdesc}>
                 <h5 className={styles.name}>Ayodeji</h5>
