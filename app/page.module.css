@@ -162,6 +162,7 @@
   background-color: #f7f5f5;
 }
 
+ 
 
 /* Intro styles  */
 
@@ -277,7 +278,7 @@
 
   width: 100%;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -413,7 +414,6 @@
   font-size: .8rem;
 }
 
-
 @media screen and (max-width: 760px) {
   .categories {
     display: flex;
@@ -459,12 +459,14 @@
 
 @media screen and (max-width: 760px) {
 
-  /* .inputprofilediv {
-    flex: 0.7;
-    flex-basis: 10%;
-    width: 20vw;
-  } */
+ 
+.bookedimg {
+  display: none;
+}
 
+.btndiv {
+  margin-top: 12rem;
+}
   .academyheader {
     font-size: 1.3rem;
 
@@ -486,8 +488,6 @@
 
   .categories a {
     font-size: .8rem;
-
-
   }
 
   .navbar {
@@ -535,10 +535,22 @@
     right: 2rem;
   }
 
+  .btndiv {
+    margin-top: 10rem;
+  }
+
   .inputprofilediv {
     padding-right: 2rem;
   }
 
+  .bookedimg {
+    margin-left: 1rem;
+    
+  }
+
+ /* .searchContent {
+  margin-top: 10rem;
+ } */
 }
 
 
@@ -554,7 +566,7 @@
 
   .searchContent {
     width: 60%;
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 
   .profile {
@@ -584,7 +596,7 @@
   }
 
   .searchContent {
-    margin-top: .5rem;
+    margin-top: 8rem;
   }
 
   .categories a {
