@@ -14,6 +14,7 @@ interface Course {
   title: string;
   author: string;
   cover_image: string;
+  genren: [];
 
 }
 
@@ -87,6 +88,7 @@ const Search = () => {
       <div className={styles.bookSection} >
         {courses.map((course: Course, index: number) => (
           <div className={styles.bookdiv} key={index}>
+
             <div className={styles.bookContainer}>
               <Image
                 src={course.cover_image}

@@ -391,9 +391,9 @@
   display: flex;
   flex-wrap: wrap;
   /* margin: auto; */
-  width: 98vw;
+  width: 98vw;  
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
 
 }
