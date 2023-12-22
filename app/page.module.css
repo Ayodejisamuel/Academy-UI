@@ -1,12 +1,16 @@
 .navbar {
- 
+ position: fixed;
+ left: 20px;
+ right: 20px;
+ top: 0;
+ /* padding: auto 20px; */
  display: flex;
  height: 4rem;
  align-items: center;
  justify-content: space-between;
- background-color: red;
+ 
  z-index: 100;
- margin: auto ;
+ margin-bottom: 4rem;
   
  }
 .navcontainer {
@@ -74,6 +78,7 @@
 
 /* for links overflow */
 .linkContainer {
+margin-top: 3rem;
   position: relative;
   width: 100%;
   height: 4rem;
@@ -82,14 +87,17 @@
 }
 
 .linkdiv {
+
   display: flex;
   align-items: center;
   margin: 1rem 0;
   overflow-x: auto;
   scrollbar-width: thin;
+
 }
 
 .linkdiv a {
+
   display: block;
   text-decoration: none;
   margin: 1rem;
@@ -101,6 +109,7 @@
   background-color: #f7f5f5;
   border-radius: 0.5rem;
   white-space: nowrap;
+
 }
 
 .scrollArrow {
@@ -529,12 +538,7 @@
   .academyheader {
     font-size: 1rem;
   }
-
-  .notify {
-    /* margin-right: 1rem; */
-    /* margin: .2rem; */
-  }
-
+ 
   .searchinput {
 
     padding:1rem;
@@ -552,13 +556,8 @@
   .imgdetails span {
     font-size: .7rem;
   }
-  .imgcontainer {
-    /* margin-left: 1rem; */
-  }
-
-  .imgcontainer img {
-    /* margin: auto .5rem; */
-  }
+ 
+ 
 
   .img {
     font-size: 1rem;
