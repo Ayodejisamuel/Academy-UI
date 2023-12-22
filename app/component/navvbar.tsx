@@ -29,11 +29,11 @@ const TopNavbar = () => {
         <div className={styles.imgcontainer}>
             <img src="/profile.jpg" alt="/profile.jpg" width={80} height={60} />
             <div className={styles.imgdetails}>
-              <h5>Ayodeji</h5>
-              <span>Developer</span>
+              <h5>Behzas Pashei</h5>
+              <span>Ux & Ui Designer </span>
             </div>
           </div>
-          <div className={styles.notify}>😀</div>
+          <div className={styles.notify}><img src="/v6-icon (free).png"></img></div>
         </div>
       </div>
     </div>

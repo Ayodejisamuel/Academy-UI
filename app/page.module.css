@@ -530,26 +530,34 @@
     font-size: 1rem;
   }
 
+  .notify {
+    /* margin-right: 1rem; */
+    /* margin: .2rem; */
+  }
+
   .searchinput {
 
     padding:1rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
     
   }
 
   .imgdetails h5 {
     font-size: .7rem;
   }
+  .imgdetails {
+    margin: auto 1rem;
+  }
 
   .imgdetails span {
     font-size: .7rem;
   }
   .imgcontainer {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 
   .imgcontainer img {
-    margin: auto .5rem;
+    /* margin: auto .5rem; */
   }
 
   .img {
@@ -600,21 +608,23 @@
 
 @media screen and (min-width: 1300px) {
   .categoriess a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 .inputdiv {
   width: 20vw;
-  background-color: white;
+  /* background-color: white; */
   margin-right: 4rem;
 }
   .academydiv h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: 3rem;
   }
   .searchinput {
     width: 100%;
     padding:1rem;
   margin-right: 6rem;
+  border-radius: .5rem  ;
+
     
   }
 
@@ -625,10 +635,7 @@
   .imgdetails span {
     font-size: .7rem;
   }
-  .imgcontainer {
-    /* margin-left: 1rem; */
-  }
-
+ 
   .bgImage {
     right: 8rem;
   }
