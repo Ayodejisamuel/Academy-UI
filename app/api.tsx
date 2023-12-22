@@ -7,6 +7,7 @@ import Image from 'next/image';
     class: string
  } 
 
+
 const Try = () => {
     const url = 'www.waploaded.com12';
 
@@ -36,20 +37,17 @@ const Try = () => {
     useEffect(() => {
             fetchData()
     }, [])
-
+    
     return (
         <div>
         {apiData.map((dataapi, index) => (
            <div>
 <Image src='/images/booked.jpg' width={300} height={400} alt="sad" /> 
            </div> 
+
         ))}
         </div>
     )
-
-
-
-
 }
 
 export default Try;

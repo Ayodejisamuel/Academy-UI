@@ -1,3 +1,4 @@
+
 {
   "compilerOptions": {
     "target": "es5",
@@ -21,7 +22,6 @@
     "paths": {
       "@/*": ["./*"]
     }
-
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/search.jsx"],
   "exclude": ["node_modules"]

@@ -1,126 +1,57 @@
 .navbar {
 
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.categoriesdivv {
-
-  display: flex;
-  align-items: center;
-
-}
-
-.academy {
-
+ display: flex;
+ height: 4rem;
+ align-items: center;
+ justify-content: space-between;
+ background-color: red;
+  
+ }
+.navcontainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
-  align-content: center;
-
 }
+.academydiv {
 
-.academyheader {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  /* margin-right: 1rem; */
-}
-
-.inputprofilediv {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  width: 10rem;
-
-
+ 
 }
 
-.categories a {
+.categoriess {
+  display: flex;
+}
+.categoriess a {
   text-decoration: none;
   color: gray;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: bold;
   margin: 1rem;
   cursor: pointer;
 
 }
 
-.categories a:hover {
+.categoriess a:hover {
   color: rgb(68, 65, 65);
   padding-bottom: 0.5rem;
   border-bottom: 3px solid black;
 }
 
-
-.categories {
-
+.profilee {
   display: flex;
-  align-items: center;
 }
 
-.input {
-
-  padding: 1rem;
+.searchinput {
+  padding: .6rem;
   background-color: #d5d4d4;
   border-radius: .4rem;
   border: none;
   outline: none;
-
 }
-.input::placeholder {
-  color: white;
-}
+ 
 
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: antiquewhite; */
-  height: 3rem;
-  padding: 1rem;
-}
-
-.img {
-  border-radius: 1rem;
-  margin-right: 1rem;
-  object-fit: cover;
-}
-
-.imgdiv {
-  display: flex;
-  align-items: center;
-  flex: 0.6;
-  flex-basis: 40%;
-
-}
-
-.imgdesc {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8rem;
-  padding: 2rem 0;
-  justify-content: center;
-  background-color: white;
-  align-items: flex-start;
-  margin: .3rem auto;
-
-}
-
-.notification {
-  margin-left: 1rem;
-}
-
-
-
-.dropdownmenu {
-  position: relative;
-  display: inline-block;
-
-}
 
 /* for links overflow */
 .linkContainer {
@@ -414,10 +345,27 @@
   font-size: .8rem;
 }
 
-@media screen and (max-width: 760px) {
-  .categories {
-    display: flex;
+@media screen and (max-width: 500px) { 
+  .categoriess {
+    display: none;
   }
+
+  .profilee {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 760px) {
+
+  .academydiv h2 {
+    font-size: 1.3rem;
+  }
+  
+  .searchinput {
+    width: 50vw;
+  }
+
 
   .categories {
     font-size: 1rem;

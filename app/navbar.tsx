@@ -6,49 +6,33 @@ import Input from "./input";
 
 const Topbar = () => {
   return (
-    <div>
-      <div className={styles.navbar}>
-        <div className={styles.academy}>
-          <div className={styles.categories}>
-            <img
-              alt="group-logo"
-              width={30}
-              height={30}
-              src={"/Grouplogo.png"}
-            />
-            
-            <h2 className={styles.academyheader}>ACADEMY</h2>
-            <div className={styles.categoriesdivv}>
-              <Link href="">Categories</Link>
-              <Link href="">Teach</Link>
-              <Link href="">Contact Us</Link>
-              <Link href="">About Us</Link>
-            </div>
-          </div>
+    <div className={styles.navbar}>
+      <div className={styles.academydiv}>
+        <img alt="group-logo" width={30} height={30} src={"/Grouplogo.png"} />
+
+        <h2>ACADEMY</h2>
+        <div>
+          <Link href="">Categories</Link>
+          <Link href="">Teach</Link>
+          <Link href="">Contact Us</Link>
+          <Link href="">About Us</Link>
+        </div>
+      </div>
+
+      <div>
+        <div >
+          <Input />
         </div>
 
-        <div className={styles.inputprofilediv}>
-          <div className={styles.inputwrapper}>
-            <Input />
-          </div>
-
-          <div className={styles.profile}>
-            <div className={styles.imgdiv}>
-              <img
-                className={styles.img}
-                src="/profile.jpg"
-                alt="/profile.jpg"
-                width={80}
-                height={60}
-                
-              />
-              <div className={styles.imgdesc}>
-                <h5 className={styles.name}>Ayodeji</h5>
-                <span className={styles.role}>Developer</span>
-              </div>
+        <div>
+          <div>
+            <img src="/profile.jpg" alt="/profile.jpg" width={80} height={60} />
+            <div>
+              <h5>Ayodeji</h5>
+              <span>Developer</span>
             </div>
-            <div className={styles.notification}>😀</div>
           </div>
+          <div>😀</div>
         </div>
       </div>
       <hr />
