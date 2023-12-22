@@ -5,13 +5,12 @@
  top: 0;
  /* padding: auto 20px; */
  display: flex;
- height: 4rem;
+ height: 5rem;
  align-items: center;
  justify-content: space-between;
- 
+ padding: 2rem auto;
  z-index: 100;
- margin-bottom: 4rem;
-  
+ 
  }
 .navcontainer {
 
@@ -62,8 +61,17 @@
 .inputcontainer {
   display: flex;
   align-items: center;
+  height: 3rem;
+ 
 }
 
+.imgcontainer img {
+  object-fit: cover;
+  /* height: 3rem; */
+}
+.imgdetails {
+
+}
 .searchinput {
 
   padding: .7rem;
