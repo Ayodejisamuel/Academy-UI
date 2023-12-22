@@ -1,16 +1,20 @@
 .navbar {
-
+ 
  display: flex;
  height: 4rem;
  align-items: center;
  justify-content: space-between;
  background-color: red;
+ z-index: 100;
+ margin: auto ;
   
  }
 .navcontainer {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .academydiv {
 
@@ -24,6 +28,7 @@
   display: flex;
 }
 .categoriess a {
+
   text-decoration: none;
   color: gray;
   font-size: .9rem;
@@ -41,14 +46,28 @@
 
 .profilee {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imgcontainer {
+  display: flex;
+  align-items: center;
+
+}
+.inputcontainer {
+  display: flex;
+  align-items: center;
 }
 
 .searchinput {
-  padding: .6rem;
+
+  padding: .7rem;
   background-color: #d5d4d4;
   border-radius: .4rem;
   border: none;
   outline: none;
+  
 }
  
 
@@ -59,6 +78,7 @@
   width: 100%;
   height: 4rem;
   width: 100vw;
+ 
 }
 
 .linkdiv {
@@ -346,14 +366,7 @@
 }
 
 @media screen and (max-width: 500px) { 
-  .categoriess {
-    display: none;
-  }
 
-  .profilee {
-    display: none;
-  }
-  
 }
 
 @media screen and (max-width: 760px) {
@@ -361,10 +374,19 @@
   .academydiv h2 {
     font-size: 1.3rem;
   }
-  
-  .searchinput {
-    width: 50vw;
+  .categoriess {
+    display: none;
   }
+  
+
+  .profilee {
+    display: none;
+  }
+  
+  
+  /* .searchinput {
+    width: 50vw;
+  } */
 
 
   .categories {
@@ -471,7 +493,7 @@
 
 @media screen and (min-width: 760px) {
 
-  .profile {
+  .profilee {
     display: none;
   }
 
@@ -508,6 +530,28 @@
     font-size: 1rem;
   }
 
+  .searchinput {
+
+    padding:1rem;
+  margin-right: 3rem;
+    
+  }
+
+  .imgdetails h5 {
+    font-size: .7rem;
+  }
+
+  .imgdetails span {
+    font-size: .7rem;
+  }
+  .imgcontainer {
+    margin-left: 1rem;
+  }
+
+  .imgcontainer img {
+    margin: auto .5rem;
+  }
+
   .img {
     font-size: 1rem;
   }
@@ -517,7 +561,7 @@
     margin-top: 6rem;
   }
 
-  .profile {
+  .profilee {
     display: flex;
   }
 
@@ -555,10 +599,34 @@
 
 
 @media screen and (min-width: 1300px) {
-
-  .academyheader {
-    font-size: 2.5rem;
+  .categoriess a {
+    font-size: 1.5rem;
+  }
+.inputdiv {
+  width: 20vw;
+  background-color: white;
+  margin-right: 4rem;
+}
+  .academydiv h2 {
+    font-size: 2rem;
     margin-right: 3rem;
+  }
+  .searchinput {
+    width: 100%;
+    padding:1rem;
+  margin-right: 6rem;
+    
+  }
+
+  .imgdetails h5 {
+    font-size: .7rem;
+  }
+
+  .imgdetails span {
+    font-size: .7rem;
+  }
+  .imgcontainer {
+    /* margin-left: 1rem; */
   }
 
   .bgImage {

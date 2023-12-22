@@ -18,14 +18,23 @@ const TopNavbar = () => {
           <Link href="">About Us</Link>
         </div>
       </div>
-      <div>
+      <div className={styles.inputcontainer}>
         <div className={styles.inputdiv}>
           <input
             className={styles.searchinput}
             placeholder="search anything..."
           ></input>
         </div>
-        <div className={styles.profilee}></div>
+        <div className={styles.profilee}>
+        <div className={styles.imgcontainer}>
+            <img src="/profile.jpg" alt="/profile.jpg" width={80} height={60} />
+            <div className={styles.imgdetails}>
+              <h5>Ayodeji</h5>
+              <span>Developer</span>
+            </div>
+          </div>
+          <div className={styles.notify}>😀</div>
+        </div>
       </div>
     </div>
   );
