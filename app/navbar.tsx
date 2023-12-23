@@ -1,14 +1,16 @@
 'use client'
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
+
 
 const TopNavbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.navcontainer}>
         <div className={styles.academydiv}>
-          <img alt="group-logo" width={30} height={30} src={"/Grouplogo.png"} />
+          <Image alt="group-logo" width='30' height='30' src="Grouplogo.png" />
 
           <h2>ACADEMY</h2>
         </div>
@@ -28,13 +30,13 @@ const TopNavbar = () => {
         </div>
         <div className={styles.profilee}>
         <div className={styles.imgcontainer}>
-            <img src="/profile.jpg" alt="/profile.jpg" width={80} height={60} />
+            <Image src="profile.jpg" alt="profile.jpg" width='80' height='60' />
             <div className={styles.imgdetails}>
               <h5>Behzas Pashei</h5>
               <span>Ux & Ui Designer </span>
             </div>
           </div>
-          <div className={styles.notify}><img src="/v6-icon (free).png" alt="notification-icon"></img></div>
+          <div className={styles.notify}><Image src="v6-icon (free).png" width='20' height='20' alt="notification-icon" /></div>
         </div>
       </div>
  

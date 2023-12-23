@@ -1,7 +1,6 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Button from "./button";
 import styles from "./page.module.css";
 
@@ -16,26 +15,31 @@ const Intro = () => {
         </div>
         <div>
           <div className={styles.btndiv}>
-          
-            <div className={styles.startbtndiv}><Button name="Start Course now" /></div>
-            <Image alt="arrow-img" className={styles.bookedimg} width={200} height={100} src='/booked.jpg' loading="lazy" />
+            <div className={styles.startbtndiv}>
+              <Button name="Start Course now" />
+            </div>
+            <Image
+              alt="arrow-img"
+              className={styles.bookedimg}
+              width='200'
+              height='100'
+              src="booked.jpg"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
 
       <div className={styles.bgImage}>
-
         <Image
-          src="/image.jpg"
+          src="image.jpg"
           alt="bgimage"
           className={styles.bgImagee}
-          height={600}
-          width={500}
+          height='600'
+          width='500'
           loading="lazy"
         />
-        
       </div>
-      
     </div>
   );
 };
