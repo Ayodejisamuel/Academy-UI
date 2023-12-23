@@ -15,8 +15,8 @@ const TopNavbar = () => {
         <div className={styles.categoriess}>
           <Link href="">Categories</Link>
           <Link href="">Teach</Link>
-          <Link href="">Contact Us</Link>
-          <Link href="">About Us</Link>
+          <Link href="">Contact</Link>
+          <Link href="">About</Link>
         </div>
       </div>
       <div className={styles.inputcontainer}>
@@ -37,7 +37,7 @@ const TopNavbar = () => {
           <div className={styles.notify}><img src="/v6-icon (free).png" alt="notification-icon"></img></div>
         </div>
       </div>
-    <hr />
+ 
     </div>
   );
 };

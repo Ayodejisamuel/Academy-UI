@@ -1,5 +1,5 @@
 .navbar {
- 
+ font-family: 'Roboto', sans-serif;
   display: flex;
   height: 5rem;
   align-items: center;
@@ -22,9 +22,16 @@
    align-items: center;
   
  }
+
+ .academydiv h2 {
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+ }
  
  .categoriess {
    display: flex;
+   justify-content: center;
+   align-items: center;
  }
  .categoriess a {
  
@@ -65,12 +72,10 @@
    object-fit: cover;
    /* height: 3rem; */
  }
- .imgdetails {
  
- }
  .searchinput {
  
-   padding: .7rem;
+   padding: .9rem;
    background-color: #d5d4d4;
    border-radius: .4rem;
    border: none;
@@ -80,6 +85,7 @@
   
  
  .line {
+  display: flex;
   margin: 2rem auto;
  }
  /* for links overflow */
@@ -407,7 +413,7 @@
    .categories {
      font-size: 1rem;
    }
- 
+  
    .inputwrapper {
      display: flex;
      margin-right: 0;
@@ -448,7 +454,10 @@
  .bookedimg {
    display: none;
  }
- 
+ .line {
+  display: none;
+ }
+
  .btndiv {
    margin-top: 12rem;
  }
