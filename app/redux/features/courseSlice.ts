@@ -13,15 +13,13 @@ interface Course {
 
 interface CourseState {
     courses: Course[],
-    loading: boolean,
-    error:string | null
+ 
 }
 
 
 const initialState : CourseState = {
     courses : [],
-    loading: false,
-    error:null,
+ 
 }
 
 const courseSlice = createSlice({
@@ -33,24 +31,15 @@ const courseSlice = createSlice({
       
         setCourses : (state, action: PayloadAction<Course[]>) => {
             state.courses = action.payload
-            state.loading = false,
-            state.error = null
+          
         },
-
-        setLoading : (state, action) => {
-            state.loading = action.payload
-        },
-
-        setError : (state, action) => {
-            state.error = action.payload
-            state.loading = false
-        }
+ 
     }
 
 
  })
 
 
- export const {setCourses, setError, setLoading} = courseSlice.actions;
+ export const {setCourses} = courseSlice.actions;
 
  export default courseSlice.reducer;
