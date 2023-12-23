@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,14 +18,14 @@ const Intro = () => {
           <div className={styles.btndiv}>
           
             <div className={styles.startbtndiv}><Button name="Start Course now" /></div>
-            <img alt="arrow-img" className={styles.bookedimg} width={200} height={100} src='/booked.jpg' loading="lazy" />
+            <Image alt="arrow-img" className={styles.bookedimg} width={200} height={100} src='/booked.jpg' loading="lazy" />
           </div>
         </div>
       </div>
 
       <div className={styles.bgImage}>
 
-        <img
+        <Image
           src="/image.jpg"
           alt="bgimage"
           className={styles.bgImagee}

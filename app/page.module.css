@@ -1,656 +1,654 @@
 .navbar {
- position: fixed;
- left: 20px;
- right: 20px;
- top: 0;
- /* padding: auto 20px; */
- display: flex;
- height: 5rem;
- align-items: center;
- justify-content: space-between;
- padding: 2rem auto;
- z-index: 100;
+ 
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem auto;
+  z-index: 100;
+  
+  }
+ .navcontainer {
+ 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
  
  }
-.navcontainer {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-.academydiv {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ .academydiv {
  
-}
-
-.categoriess {
-  display: flex;
-}
-.categoriess a {
-
-  text-decoration: none;
-  color: gray;
-  font-size: .9rem;
-  font-weight: bold;
-  margin: 1rem;
-  cursor: pointer;
-
-}
-
-.categoriess a:hover {
-  color: rgb(68, 65, 65);
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid black;
-}
-
-.profilee {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.imgcontainer {
-  display: flex;
-  align-items: center;
-
-}
-.inputcontainer {
-  display: flex;
-  align-items: center;
-  height: 3rem;
- 
-}
-
-.imgcontainer img {
-  object-fit: cover;
-  /* height: 3rem; */
-}
-.imgdetails {
-
-}
-.searchinput {
-
-  padding: .7rem;
-  background-color: #d5d4d4;
-  border-radius: .4rem;
-  border: none;
-  outline: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   
-}
+ }
  
-
-
-/* for links overflow */
-.linkContainer {
-margin-top: 3rem;
-  position: relative;
-  width: 100%;
-  height: 4rem;
-  width: 100vw;
+ .categoriess {
+   display: flex;
+ }
+ .categoriess a {
  
-}
-
-.linkdiv {
-
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
-
-}
-
-.linkdiv a {
-
-  display: block;
-  text-decoration: none;
-  margin: 1rem;
-  padding: 1rem 1.5rem;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  font-size: .8rem;
-  background-color: #f7f5f5;
-  border-radius: 0.5rem;
-  white-space: nowrap;
-
-}
-
-.scrollArrow {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 10px;
-  background-color: #f7f5f5;
-}
-
+   text-decoration: none;
+   color: gray;
+   font-size: .9rem;
+   font-weight: bold;
+   margin: 1rem;
+   cursor: pointer;
  
-
-/* Intro styles  */
-
-.introContainer {
-  position: relative;
-  height: 94vh;
-  /* background-color: red;  */
-  width: 100vw;
-
-
-}
-
-.hellodiv {
-
-  /* font-family: ; */
-  z-index: 1;
-
-}
-
-
-
-.hellocontent {
-  padding-left: 10px;
-  font-weight: 900;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  line-height: 60px;
-  width: 100vw;
-  width: fit-content;
-  top: 8rem;
-  position: relative;
-
-}
-
-.btndiv {
-  margin-top: 8rem;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-
-
-
-}
-
-.bgImage {
-
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  top: 8rem;
-}
-
-.bgImagee {
-  border-radius: 1rem;
-  object-fit: cover;
-}
-
-.emoji {
-  font-size: 2rem;
-}
-
-.contentdiv {
-  height: 100vh;
-  /* width: 37rem; */
-  font-size: 2rem;
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  line-height: 68px;
-  /* background-color: red; */
-  flex-direction: column;
-
-}
-
-.span {
-  font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  line-height: 2;
-  font-weight: 900;
-}
-
-.startbtn {
-  margin-top: 8rem;
-  text-decoration: none;
-  padding: 1rem;
-  background-color: #080808;
-  color: #ffff;
-  width: fit-content;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  border-radius: .5rem;
-  /* margin-right: 1.5rem; */
-
-}
-
-
-
-.spane {
-
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #9E5CF2;
-  font-family: 'Roboto', sans-serif;
-}
-
-
-
-/* search styles*/
-
-.searchContent {
-
-  width: 100%;
-  margin: auto;
-  margin-top: 5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.categoriesdiv {
-  display: flex;
-  /* background-color: red; */
-  align-items: center;
-  margin: 4rem auto;
-  width: 80%;
-
-
-
-}
-
-.searchspan {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #9E5CF2;
-  font-family: 'Roboto', sans-serif;
-}
-
-.searchheader {
-  font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  line-height: 2;
-  font-weight: 900;
-}
-
-.inputdiv {
-  width: 50%;
-  align-items: center;
-}
-
-.catbtn {
-  font-size: .4rem;
-  /* background-color: red; */
-}
-
-.inputi {
-  padding: 1rem;
-  background-color: #d5d4d4;
-  border-radius: .4rem;
-  border: none;
-  outline: none;
-  flex: 1;
-  flex-basis: 55%;
-  /* width:40rem; */
-
-}
-
-.searchinputdiv {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex: 1;
-  flex-basis: 60%;
-}
-
-.view {
-  font-size: .8rem;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  padding: .5rem;
-}
-
-/* styles for links session */
-
-.courseDiv {
-  /* margin: ; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.courseHeader {
-  color: #080808;
-  font-size: 1rem;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-
-.links a {
-  display: block;
-  text-decoration: none;
-  margin: 1rem;
-  padding: .5rem;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  font-size: .8rem;
-  background-color: #f7f5f5;
-  border-radius: 0.5rem;
-  white-space: nowrap;
-}
-
-.bookSection {
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: auto; */
-  width: 98vw;  
-  align-items: center;
-  justify-content: space-between;
-
-
-}
-
-.bookContainer {
-  margin: 1rem;
-}
-
-.bookContainer img {
-  border-radius: 1rem;
-}
-
-
-.title,
-.author {
-  text-align: center;
-  font-size: .8rem;
-}
-
-@media screen and (max-width: 500px) { 
-
-}
-
-@media screen and (max-width: 760px) {
-
-  .academydiv h2 {
-    font-size: 1.3rem;
-  }
-  .categoriess {
-    display: none;
-  }
+ }
+ 
+ .categoriess a:hover {
+   color: rgb(68, 65, 65);
+   padding-bottom: 0.5rem;
+   border-bottom: 3px solid black;
+ }
+ 
+ .profilee {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .imgcontainer {
+   display: flex;
+   align-items: center;
+ 
+ }
+ .inputcontainer {
+   display: flex;
+   align-items: center;
+   height: 3rem;
   
-
-  .profilee {
-    display: none;
-  }
+ }
+ 
+ .imgcontainer img {
+   object-fit: cover;
+   /* height: 3rem; */
+ }
+ .imgdetails {
+ 
+ }
+ .searchinput {
+ 
+   padding: .7rem;
+   background-color: #d5d4d4;
+   border-radius: .4rem;
+   border: none;
+   outline: none;
+   
+ }
   
+ 
+ .line {
+  margin: 2rem auto;
+ }
+ /* for links overflow */
+ .linkContainer {
+ /* margin-top: 3rem; */
+   position: relative;
+   width: 100%;
+   height: 4rem;
+   width: 100vw;
   
-  /* .searchinput {
-    width: 50vw;
+ }
+ 
+ .linkdiv {
+ 
+   display: flex;
+   align-items: center;
+   margin: 1rem 0;
+   overflow-x: auto;
+   scrollbar-width: thin;
+ 
+ }
+ 
+ .linkdiv a {
+ 
+   display: block;
+   text-decoration: none;
+   margin: 1rem;
+   padding: 1rem 1.5rem;
+   color: black;
+   font-weight: bold;
+   text-align: center;
+   font-size: .8rem;
+   background-color: #f7f5f5;
+   border-radius: 0.5rem;
+   white-space: nowrap;
+ 
+ }
+ 
+ .scrollArrow {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   cursor: pointer;
+   padding: 10px;
+   background-color: #f7f5f5;
+ }
+ 
+  
+ 
+ /* Intro styles  */
+ 
+ .introContainer {
+   position: relative;
+   height: 94vh;
+   /* background-color: red;  */
+   width: 100vw;
+ 
+ 
+ }
+ 
+ .hellodiv {
+ 
+   /* font-family: ; */
+   z-index: 1;
+ 
+ }
+ 
+ 
+ 
+ .hellocontent {
+   padding-left: 10px;
+   font-weight: 900;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.5rem;
+   line-height: 60px;
+   width: 100vw;
+   width: fit-content;
+   top: 8rem;
+   position: relative;
+ 
+ }
+ 
+ .btndiv {
+   margin-top: 8rem;
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+ 
+ 
+ 
+ }
+ 
+ .bgImage {
+ 
+   position: absolute;
+   right: 0;
+   z-index: -1;
+   top: 8rem;
+ }
+ 
+ .bgImagee {
+   border-radius: 1rem;
+   object-fit: cover;
+ }
+ 
+ .emoji {
+   font-size: 2rem;
+ }
+ 
+ .contentdiv {
+   height: 100vh;
+   /* width: 37rem; */
+   font-size: 2rem;
+   font-weight: 900;
+   display: flex;
+   justify-content: center;
+   line-height: 68px;
+   /* background-color: red; */
+   flex-direction: column;
+ 
+ }
+ 
+ .span {
+   font-size: 1.5rem;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 900;
+   line-height: 2;
+   font-weight: 900;
+ }
+ 
+ .startbtn {
+   margin-top: 8rem;
+   text-decoration: none;
+   padding: 1rem;
+   background-color: #080808;
+   color: #ffff;
+   width: fit-content;
+   font-size: 1rem;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 100;
+   border-radius: .5rem;
+   /* margin-right: 1.5rem; */
+ 
+ }
+ 
+ 
+ 
+ .spane {
+ 
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #9E5CF2;
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+ 
+ 
+ /* search styles*/
+ 
+ .searchContent {
+ 
+   width: 100%;
+   margin: auto;
+   margin-top: 5rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+ 
+ }
+ 
+ .categoriesdiv {
+   display: flex;
+   /* background-color: red; */
+   align-items: center;
+   margin: 4rem auto;
+   width: 80%;
+ 
+ 
+ 
+ }
+ 
+ .searchspan {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #9E5CF2;
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+ .searchheader {
+   font-size: 1.5rem;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 900;
+   line-height: 2;
+   font-weight: 900;
+ }
+ 
+ .inputdiv {
+   width: 50%;
+   align-items: center;
+ }
+ 
+ .catbtn {
+   font-size: .4rem;
+   /* background-color: red; */
+ }
+ 
+ .inputi {
+   padding: 1rem;
+   background-color: #d5d4d4;
+   border-radius: .4rem;
+   border: none;
+   outline: none;
+   flex: 1;
+   flex-basis: 55%;
+   /* width:40rem; */
+ 
+ }
+ 
+ .searchinputdiv {
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex: 1;
+   flex-basis: 60%;
+ }
+ 
+ .view {
+   font-size: .8rem;
+   font-weight: 500;
+   font-family: 'Roboto', sans-serif;
+   padding: .5rem;
+ }
+ 
+ /* styles for links session */
+ 
+ .courseDiv {
+   /* margin: ; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+ }
+ 
+ .courseHeader {
+   color: #080808;
+   font-size: 1rem;
+ }
+ 
+ .links {
+   display: flex;
+   align-items: center;
+   margin: 1rem 0;
+   overflow-x: auto;
+   scrollbar-width: thin;
+ }
+ 
+ .links a {
+   display: block;
+   text-decoration: none;
+   margin: 1rem;
+   padding: .5rem;
+   color: black;
+   font-weight: bold;
+   text-align: center;
+   font-size: .8rem;
+   background-color: #f7f5f5;
+   border-radius: 0.5rem;
+   white-space: nowrap;
+ }
+ 
+ .bookSection {
+   display: flex;
+   flex-wrap: wrap;
+   /* margin: auto; */
+   width: 98vw;  
+   align-items: center;
+   justify-content: space-between;
+ 
+ 
+ }
+ 
+ .bookContainer {
+   margin: 1rem;
+ }
+ 
+ .bookContainer img {
+   border-radius: 1rem;
+ }
+ 
+ 
+ .title,
+ .author {
+   text-align: center;
+   font-size: .8rem;
+ }
+ 
+ @media screen and (max-width: 500px) { 
+ 
+ }
+ 
+ @media screen and (max-width: 760px) {
+ 
+   .academydiv h2 {
+     font-size: 1.3rem;
+   }
+   .categoriess {
+     display: none;
+   }
+   
+ 
+   .profilee {
+     display: none;
+   }
+   
+   
+   /* .searchinput {
+     width: 50vw;
+   } */
+ 
+ 
+   .categories {
+     font-size: 1rem;
+   }
+ 
+   .inputwrapper {
+     display: flex;
+     margin-right: 0;
+   }
+ 
+   .profile {
+     display: none;
+   }
+ 
+   .categoriesdivv {
+     display: none;
+   }
+ 
+ 
+ 
+   .hellodiv {
+     font-size: 1rem;
+   }
+ 
+   .searchContent {
+     width: 100%;
+     /* background-color: red; */
+     margin-top: 10rem;
+   }
+ 
+   .startbtn {
+     margin-top: 5rem;
+   }
+ 
+   .btndiv {
+     margin-top: 8rem;
+   }
+ }
+ 
+ @media screen and (max-width: 760px) {
+ 
+  
+ .bookedimg {
+   display: none;
+ }
+ 
+ .btndiv {
+   margin-top: 12rem;
+ }
+   .academyheader {
+     font-size: 1.3rem;
+ 
+   }
+ 
+   .view {
+     display: none;
+   }
+ 
+   .categoriesdiv {
+     width: 100%;
+   }
+ 
+   .searchContent {
+     margin-top: 8rem;
+     margin: 8rem auto;
+     /* background-color: red; */
+   }
+ 
+   .categories a {
+     font-size: .8rem;
+   }
+ 
+   .navbar {
+     padding-right: 1rem;
+   }
+ 
+   .input {
+     padding: 1.2rem;
+   }
+ 
+   .input::placeholder {
+     font-size: 1rem;
+     color: gray;
+   }
+ 
+   .profile {
+     font-size: 1rem;
+   }
+ 
+   .imgdiv {
+     font-size: 1rem;
+   }
+ 
+   .imgdesc {
+     font-size: 1rem;
+   }
+ 
+   .notification {
+     font-size: 2rem;
+   }
+ 
+ }
+ 
+ @media screen and (min-width: 760px) {
+ 
+   .profilee {
+     display: none;
+   }
+ 
+   .academyheader {
+     font-size: 1rem;
+   }
+ 
+   .bgImage {
+     right: 2rem;
+   }
+ 
+   .btndiv {
+     margin-top: 10rem;
+   }
+ 
+   .inputprofilediv {
+     padding-right: 2rem;
+   }
+ 
+   .bookedimg {
+     margin-left: 1rem;
+     
+   }
+ 
+  /* .searchContent {
+   margin-top: 10rem;
   } */
-
-
-  .categories {
-    font-size: 1rem;
-  }
-
-  .inputwrapper {
-    display: flex;
-    margin-right: 0;
-  }
-
-  .profile {
-    display: none;
-  }
-
-  .categoriesdivv {
-    display: none;
-  }
-
-
-
-  .hellodiv {
-    font-size: 1rem;
-  }
-
-  .searchContent {
-    width: 100%;
-    /* background-color: red; */
-    margin-top: 10rem;
-  }
-
-  .startbtn {
-    margin-top: 5rem;
-  }
-
-  .btndiv {
-    margin-top: 8rem;
-  }
-}
-
-@media screen and (max-width: 760px) {
-
- 
-.bookedimg {
-  display: none;
-}
-
-.btndiv {
-  margin-top: 12rem;
-}
-  .academyheader {
-    font-size: 1.3rem;
-
-  }
-
-  .view {
-    display: none;
-  }
-
-  .categoriesdiv {
-    width: 100%;
-  }
-
-  .searchContent {
-    margin-top: 8rem;
-    margin: 8rem auto;
-    /* background-color: red; */
-  }
-
-  .categories a {
-    font-size: .8rem;
-  }
-
-  .navbar {
-    padding-right: 1rem;
-  }
-
-  .input {
-    padding: 1.2rem;
-  }
-
-  .input::placeholder {
-    font-size: 1rem;
-    color: gray;
-  }
-
-  .profile {
-    font-size: 1rem;
-  }
-
-  .imgdiv {
-    font-size: 1rem;
-  }
-
-  .imgdesc {
-    font-size: 1rem;
-  }
-
-  .notification {
-    font-size: 2rem;
-  }
-
-}
-
-@media screen and (min-width: 760px) {
-
-  .profilee {
-    display: none;
-  }
-
-  .academyheader {
-    font-size: 1rem;
-  }
-
-  .bgImage {
-    right: 2rem;
-  }
-
-  .btndiv {
-    margin-top: 10rem;
-  }
-
-  .inputprofilediv {
-    padding-right: 2rem;
-  }
-
-  .bookedimg {
-    margin-left: 1rem;
-    
-  }
-
- /* .searchContent {
-  margin-top: 10rem;
- } */
-}
-
-
-@media screen and (min-width: 1000px) {
-
-  .academyheader {
-    font-size: 1rem;
-  }
- 
-  .searchinput {
-
-    padding:1rem;
-  margin-right: 2rem;
-    
-  }
-
-  .imgdetails h5 {
-    font-size: .7rem;
-  }
-  .imgdetails {
-    margin: auto 1rem;
-  }
-
-  .imgdetails span {
-    font-size: .7rem;
-  }
+ }
  
  
-
-  .img {
-    font-size: 1rem;
-  }
-
-  .searchContent {
-    width: 60%;
-    margin-top: 6rem;
-  }
-
-  .profilee {
-    display: flex;
-  }
-
-  .hellocontent {
-    font-size: 2rem;
-    line-height: 68px;
-    padding-bottom: 3rem;
-  }
-
-  .spane {
-    font-size: 2rem;
-  }
-
-
-
-  .bgImage {
-    right: 2rem;
-  }
-
-  .inputprofilediv {
-    /* background-color: red; */
-    padding-right: 10rem;
-    height: 4rem;
-  }
-
-  .searchContent {
-    margin-top: 8rem;
-  }
-
-  .categories a {
-    font-size: 1rem;
-  }
-
-}
-
-
-@media screen and (min-width: 1300px) {
-  .categoriess a {
-    font-size: 1.2rem;
-  }
-.inputdiv {
-  width: 20vw;
-  /* background-color: white; */
-  margin-right: 4rem;
-}
-  .academydiv h2 {
-    font-size: 1.8rem;
-    margin-right: 3rem;
-  }
-  .searchinput {
-    width: 100%;
-    padding:1rem;
-  margin-right: 6rem;
-  border-radius: .5rem  ;
-
-    
-  }
-
-  .imgdetails h5 {
-    font-size: .7rem;
-  }
-
-  .imgdetails span {
-    font-size: .7rem;
-  }
+ @media screen and (min-width: 1000px) {
  
-  .bgImage {
-    right: 8rem;
-  }
-
-  .startbtn {
-    margin-right: 3rem;
-  }
-
-
-
-}
+   .academyheader {
+     font-size: 1rem;
+   }
+  
+   .searchinput {
+ 
+     padding:1rem;
+   margin-right: 2rem;
+     
+   }
+ 
+   .imgdetails h5 {
+     font-size: .7rem;
+   }
+   .imgdetails {
+     margin: auto 1rem;
+   }
+ 
+   .imgdetails span {
+     font-size: .7rem;
+   }
+  
+  
+ 
+   .img {
+     font-size: 1rem;
+   }
+ 
+   .searchContent {
+     width: 60%;
+     margin-top: 6rem;
+   }
+ 
+   .profilee {
+     display: flex;
+   }
+ 
+   .hellocontent {
+     font-size: 2rem;
+     line-height: 68px;
+     padding-bottom: 3rem;
+   }
+ 
+   .spane {
+     font-size: 2rem;
+   }
+ 
+ 
+ 
+   .bgImage {
+     right: 2rem;
+   }
+ 
+   .inputprofilediv {
+     /* background-color: red; */
+     padding-right: 10rem;
+     height: 4rem;
+   }
+ 
+   .searchContent {
+     margin-top: 8rem;
+   }
+ 
+   .categories a {
+     font-size: 1rem;
+   }
+ 
+ }
+ 
+ 
+ @media screen and (min-width: 1300px) {
+   .categoriess a {
+     font-size: 1.2rem;
+   }
+ .inputdiv {
+   width: 20vw;
+   /* background-color: white; */
+   margin-right: 4rem;
+ }
+   .academydiv h2 {
+     font-size: 1.8rem;
+     margin-right: 3rem;
+   }
+   .searchinput {
+     width: 100%;
+     padding:1rem;
+   margin-right: 6rem;
+   border-radius: .5rem  ;
+ 
+     
+   }
+ 
+   .imgdetails h5 {
+     font-size: .7rem;
+   }
+ 
+   .imgdetails span {
+     font-size: .7rem;
+   }
+  
+   .bgImage {
+     right: 8rem;
+   }
+ 
+   .startbtn {
+     margin-right: 3rem;
+   }
+ 
+ 
+ 
+ }

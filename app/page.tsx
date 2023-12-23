@@ -7,7 +7,8 @@ import Topbar from './navbar'
 import Search from "./search";
 import Footer from "./component/footer";
  import store from './redux/store'
- import TopNavbar from "./component/navvbar";
+ import Line from "./line";
+//  import TopNavbar from "./component/navvbar";
  
  
  
@@ -21,7 +22,8 @@ export default function Navbar() {
   return (
     <div>
 
- <TopNavbar/>
+ <Topbar/>
+ <Line />
       <Link />
       <Intro />
       <Provider store ={store}>

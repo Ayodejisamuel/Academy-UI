@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Link from "next/link";
 import styles from "../page.module.css";
@@ -33,7 +34,7 @@ const TopNavbar = () => {
               <span>Ux & Ui Designer </span>
             </div>
           </div>
-          <div className={styles.notify}><img src="/v6-icon (free).png"></img></div>
+          <div className={styles.notify}><img src="/v6-icon (free).png" alt="notification-icon"></img></div>
         </div>
       </div>
     </div>
