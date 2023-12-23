@@ -1,9 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
-import { Provider } from "react-redux";
 import { useDispatch, useSelector } from "react-redux";
-import store from "./redux/store";
-import { setCourses } from "./redux/features/courseSlice";
+import { setCourses, setError, setLoading } from "./redux/features/courseSlice";
 import styles from "./page.module.css";
 import Button from "./button";
 import Image from "next/image";
@@ -19,10 +17,13 @@ interface Course {
 const Search = () => {
   const dispatch = useDispatch();
 
-  const courses = useSelector((state: any) => state.course.courses);
+  const {courses, loading, error} = useSelector((state: any) => state.course);
 
   useEffect(() => {
     const fetchData = async () => {
+
+      dispatch(setLoading(true))
+
       const URL = "https://freetestapi.com/api/v1/books";
 
       try {
@@ -39,14 +40,29 @@ const Search = () => {
         dispatch(setCourses(result));
       } catch (error: any) {
         console.error("Error fetching data:", error.message);
+        dispatch(setError(error.message))
+      }finally {
+        dispatch(setLoading(false))
       }
+
+      if(loading) {
+        return <p>Loading....</p>;
+      }
+
+      if(error) {
+        return <p>Error: {error}</p>
+      }
+      
+
+
     };
+
 
     fetchData();
   }, [dispatch]);
 
   return (
-    <Provider store={store}>
+    
       <div className={styles.searchContainer}>
         <div className={styles.searchContent}>
           <h2 className={styles.searchheader}>
@@ -81,7 +97,7 @@ const Search = () => {
         </div>
 
         <div className={styles.bookSection}>
-          {courses.map((course: Course, index: number) => (
+          { courses.map((course: Course, index: number) => (
             <div className={styles.bookdiv} key={index}>
               <div className={styles.bookContainer}>
                 <Image
@@ -90,7 +106,7 @@ const Search = () => {
                   height={300}
                   alt={course.cover_image}
                   loading="lazy"
-                  // layout='fill'
+              
                 />
 
                 <h5 className={styles.title}>title : {course.title}</h5>
@@ -100,7 +116,7 @@ const Search = () => {
           ))}
         </div>
       </div>
-    </Provider>
+ 
   );
 };
 
