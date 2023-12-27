@@ -31,7 +31,7 @@ interface Course {
           <div className={styles.bookContainer}>
             <Image
               src={course.cover_image}
-              width={300}
+              width={290}
               height={300}
               alt={course.cover_image}
               loading="lazy"
