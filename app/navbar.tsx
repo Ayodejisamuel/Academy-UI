@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
+import Search from "./search";
 
 
 const TopNavbar = () => {
@@ -23,7 +24,7 @@ const TopNavbar = () => {
       </div>
       <div className={styles.inputcontainer}>
         <div className={styles.inputdiv}>
-          <input
+          <input    
             className={styles.searchinput}
             placeholder="search anything..."
           ></input>

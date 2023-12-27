@@ -1,29 +1,29 @@
 "use client";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setCourses} from "./redux/features/courseSlice";
+import React, { useEffect, useState } from "react";
+import { useDispatch} from "react-redux";
+import { setCourses, setLoading } from "./redux/features/courseSlice";
 import styles from "./page.module.css";
 import Button from "./button";
-import Image from "next/image";
+import  Display  from "./display";
+import SearchInput from "./searchInput";
 
-interface Course {
-  id: number;
-  title: string;
-  author: string;
-  cover_image: string;
-  genren: [];
-}
+ 
 
 const Search = () => {
   const dispatch = useDispatch();
+  const [searchData, setSearchData] = useState("");
 
-  const courses  = useSelector((state: any) => state.course.courses);
+
+  const handleSearchData  = (value : string) => {
+
+    setSearchData(value)
+  }
 
   useEffect(() => {
-    const fetchData = async () => {
-    
+    const fetchData = async (searchData: string) => {
+      dispatch(setLoading(true));
 
-      const URL = "https://freetestapi.com/api/v1/books";
+      const URL = `https://freetestapi.com/api/v1/books?search=${searchData}`;
 
       try {
         const response = await fetch(URL);
@@ -37,16 +37,17 @@ const Search = () => {
         console.log("Response from API:", result);
 
         dispatch(setCourses(result));
+
+        dispatch(setLoading(result));
+
+        console.log(result);
       } catch (error: any) {
         console.error("Error fetching data:", error.message);
-         
-      }  
-
-      
+      }
     };
 
-    fetchData();
-  }, [dispatch]);
+    fetchData(searchData);
+  }, [dispatch, searchData]);
 
   return (
     <div className={styles.searchContainer}>
@@ -60,13 +61,7 @@ const Search = () => {
       <div className={styles.categoriesdiv}>
         <Button name="Categories" />
 
-        <div className={styles.searchinputdiv}>
-          <input
-            className={styles.inputi}
-            placeholder="search anything..."
-          ></input>
-        </div>
-
+    <SearchInput  searchData = {searchData} setDataValue = {handleSearchData} />
         <div className={styles.view}>or view the following courses...</div>
       </div>
 
@@ -82,24 +77,7 @@ const Search = () => {
         </div>
       </div>
 
-      <div className={styles.bookSection}>
-        {courses.map((course: Course, index: number) => (
-          <div className={styles.bookdiv} key={index}>
-            <div className={styles.bookContainer}>
-              <Image
-                src={course.cover_image}
-                width={300}
-                height={300}
-                alt={course.cover_image}
-                loading="lazy"
-              />
-
-              <h5 className={styles.title}>title : {course.title}</h5>
-              <h5 className={styles.author}>author : {course.author} </h5>
-            </div>
-          </div>
-        ))}
-      </div>
+   <Display />
     </div>
   );
 };

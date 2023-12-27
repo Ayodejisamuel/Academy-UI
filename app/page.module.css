@@ -314,6 +314,7 @@
    justify-content: space-around;
    flex: 1;
    flex-basis: 60%;
+ 
  }
  
  .view {
@@ -363,8 +364,6 @@
  .bookSection {
    display: flex;
    flex-wrap: wrap;
-   /* margin: auto; */
-   width: 98vw;  
    align-items: center;
    justify-content: space-between;
  
