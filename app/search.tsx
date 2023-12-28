@@ -27,7 +27,9 @@ const Search = () => {
         const response = await fetch(URL);
 
         if (!response.ok) {
+
           throw new Error(`error: status: ${response.status}`);
+
         }
 
         const result = await response.json();
@@ -45,7 +47,7 @@ const Search = () => {
     };
 
     fetchData(searchData || "The");
-  }, [dispatch]);
+  }, [dispatch, searchData]);
 
   return (
     <div className={styles.searchContainer}>
