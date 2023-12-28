@@ -1,27 +1,24 @@
 "use client";
-import React, { useEffect, useState} from "react";
-import { useDispatch} from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { setCourses, setLoading } from "./redux/features/courseSlice";
+import { setSearchData } from "./redux/features/searchSlice";
 import styles from "./page.module.css";
 import Button from "./button";
-import  Display  from "./display";
+import Display from "./display";
 import SearchInput from "./searchInput";
 
-
 const Search = () => {
-  
   const dispatch = useDispatch();
 
-  const [searchData, setSearchData] = useState('')
-  
-  const handleSearchData  = (value : string) => {
-
-    setSearchData(value)
-  
-  }
+  const searchData = useSelector((state: any) => state.search.searchData);
+  const handleSearchData = (value: string) => {
+    dispatch(setSearchData.setSearchData(value));
+  };
 
   useEffect(() => {
-    const fetchData = async (searchData: string) => {
+    const fetchData = async (searchData: any) => {
       dispatch(setLoading(true));
 
       const URL = `https://freetestapi.com/api/v1/books?search=${searchData}`;
@@ -31,7 +28,7 @@ const Search = () => {
 
         if (!response.ok) {
           throw new Error(`error: status: ${response.status}`);
-        } 
+        }
 
         const result = await response.json();
 
@@ -47,22 +44,22 @@ const Search = () => {
       }
     };
 
-    fetchData(searchData || 'The');
-  }, [dispatch, searchData]);
+    fetchData(searchData || "The");
+  }, [dispatch]);
 
   return (
     <div className={styles.searchContainer}>
       <div className={styles.searchContent}>
         <h2 className={styles.searchheader}>
           Search Among <span className={styles.searchspan}>5234 </span>Courses
-          And Find Your Favourite Course{" "}
+          And Find Your Favourite Course
         </h2>
       </div>
 
       <div className={styles.categoriesdiv}>
         <Button name="Categories" />
 
-    <SearchInput  searchData = {searchData} setDataValue = {handleSearchData} />
+        <SearchInput searchData={searchData} setDataValue={handleSearchData} />
         <div className={styles.view}>or view the following courses...</div>
       </div>
 
@@ -78,7 +75,7 @@ const Search = () => {
         </div>
       </div>
 
-   <Display />
+      <Display />
     </div>
   );
 };
