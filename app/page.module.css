@@ -364,16 +364,18 @@
  }
  
  .bookSection {
+
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
- 
- 
+
  }
  
  .bookContainer {
+
    margin: 1rem;
+   
  }
  
  .bookContainer img {
@@ -661,4 +663,12 @@
  
  
  
+ }
+
+ @media screen and (min-width: 2000px) {
+
+  .bgImage {
+    right: 20rem;
+  }
+  
  }

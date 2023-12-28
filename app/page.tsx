@@ -9,12 +9,13 @@ import Footer from "./component/footer";
 import store from "./redux/store";
 import Line from "./line";
  
+ 
 
 export default function Navbar() {
   return (
     <Provider store={store}>
       <div>
-        <Topbar />
+        <Topbar  />
         <Line />
         <Link />
         <Intro />
