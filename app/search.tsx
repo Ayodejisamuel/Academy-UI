@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { setCourses, setLoading } from "./redux/features/courseSlice";
+import { setCourses } from "./redux/features/courseSlice";
 import { setSearchData } from "./redux/features/searchSlice";
 import styles from "./page.module.css";
 import Button from "./button";
@@ -13,23 +13,20 @@ const Search = () => {
   const dispatch = useDispatch();
 
   const searchData = useSelector((state: any) => state.search.searchData);
+
   const handleSearchData = (value: string) => {
     dispatch(setSearchData.setSearchData(value));
   };
 
   useEffect(() => {
-    const fetchData = async (searchData: any) => {
-      dispatch(setLoading(true));
-
+    const getData = async (searchData: any) => {
       const URL = `https://freetestapi.com/api/v1/books?search=${searchData}`;
 
       try {
         const response = await fetch(URL);
 
         if (!response.ok) {
-
           throw new Error(`error: status: ${response.status}`);
-
         }
 
         const result = await response.json();
@@ -38,24 +35,24 @@ const Search = () => {
 
         dispatch(setCourses(result));
 
-        dispatch(setLoading(result));
-
         console.log(result);
       } catch (error: any) {
         console.error("Error fetching data:", error.message);
       }
     };
 
-    fetchData(searchData || "The");
+    getData(searchData || "The");
   }, [dispatch, searchData]);
 
   return (
     <div className={styles.searchContainer}>
       <div className={styles.searchContent}>
+
         <h2 className={styles.searchheader}>
           Search Among <span className={styles.searchspan}>5234 </span>Courses
           And Find Your Favourite Course
         </h2>
+
       </div>
 
       <div className={styles.categoriesdiv}>
