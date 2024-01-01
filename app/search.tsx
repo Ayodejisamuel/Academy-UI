@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import {useDispatch} from "react-redux";
 import { useSelector } from "react-redux";
 import { setCourses } from "./redux/features/courseSlice";
 import { setSearchData } from "./redux/features/searchSlice";
 import styles from "./page.module.css";
-import Button from "./button";
+import Link from "next/link";
 import Display from "./display";
 import SearchInput from "./searchInput";
+
 
 const Search = () => {
   const dispatch = useDispatch();
@@ -15,15 +16,18 @@ const Search = () => {
   const searchData = useSelector((state: any) => state.search.searchData);
 
   const handleSearchData = (value: string) => {
+
     dispatch(setSearchData.setSearchData(value));
+
   };
 
   useEffect(() => {
+
     const getData = async (searchData: any) => {
       const URL = `https://freetestapi.com/api/v1/books?search=${searchData}`;
 
       try {
-        const response = await fetch(URL);
+        const response = await fetch(URL, {next : {revalidate : 3600}});
 
         if (!response.ok) {
           throw new Error(`error: status: ${response.status}`);
@@ -56,7 +60,7 @@ const Search = () => {
       </div>
 
       <div className={styles.categoriesdiv}>
-        <Button name="Categories" />
+          <Link href="#" className={styles.startbtnn}>Categories</Link>
 
         <SearchInput searchData={searchData} setDataValue={handleSearchData} />
         <div className={styles.view}>or view the following courses...</div>

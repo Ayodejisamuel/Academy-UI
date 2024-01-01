@@ -59,7 +59,14 @@
  .imgcontainer {
    display: flex;
    align-items: center;
+   object-fit: cover;
+  
+   
  
+ }
+
+ .profileimg {
+  border-radius: .5rem;
  }
  .inputcontainer {
    display: flex;
@@ -215,6 +222,18 @@
    font-weight: 900;
    line-height: 2;
    font-weight: 900;
+ }
+
+ .startbtnn {
+
+  padding: 1rem;
+  background-color: #080808;
+  color: #ffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  border-radius: .5rem;
+  width: fit-content;
+  padding: 1rem;
  }
  
  .startbtn {

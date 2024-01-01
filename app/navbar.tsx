@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
-import Search from "./search";
+ 
 
 
 const TopNavbar = () => {
@@ -31,7 +31,7 @@ const TopNavbar = () => {
         </div>
         <div className={styles.profilee}>
         <div className={styles.imgcontainer}>
-            <Image src="profile.jpg" alt="profile.jpg" width='80' height='60' />
+            <Image src="profile.jpg" alt="profile.jpg" className={styles.profileimg} width='80' height='60' />
             <div className={styles.imgdetails}>
               <h5>Behzas Pashei</h5>
               <span>Ux & Ui Designer </span>

@@ -1,5 +1,6 @@
-import { createSlice, PayloadAction} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+    //interface of api data
 
 interface Course {
 
@@ -12,56 +13,41 @@ interface Course {
 
 
 interface CourseState {
-    
+
     courses: Course[],
-    loading: boolean,
-    error : string | null
-    searchData : string
-    
  
+    searchData: string
+
 }
 
 
-const initialState : CourseState = {
-    courses : [],
-    loading: false,
-    error : null,
-    searchData : ""
- 
+const initialState: CourseState = {
+    courses: [],
+    searchData: ""
 }
 
 
 const courseSlice = createSlice({
 
-    name : "courses",
+    name: "courses",
     initialState,
 
-    reducers : {
-      
-        setCourses : (state, action: PayloadAction<Course[]>) => {
+    reducers: {
+
+        setCourses: (state, action: PayloadAction<Course[]>) => {
 
             state.courses = action.payload
-            state.loading = false
-            state.error = null
-            state. searchData = ''
-          
+         
+            state.searchData = ''
+
         },
 
-        setLoading : (state, action) => {
-            state.loading = action.payload
-        },
+        
 
-        setError : (state, action) => {
-            state.error = action.payload
-            state.loading = false
-        }
+       
     }
- })
+})
 
+export const { setCourses} = courseSlice.actions;
 
-
- export const {setCourses, setLoading, setError} = courseSlice.actions;
-
- export const courseReducer = courseSlice.reducer;
-
- 
+export const courseReducer = courseSlice.reducer;
